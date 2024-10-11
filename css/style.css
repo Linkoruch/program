@@ -4,7 +4,7 @@ color: white;
 }
 
 body{
-background-image: url('./images/background.png') ;
+background-image: url('images/background.png') ;
 background-attachment: scroll;
 color: #f6ff00;
 }
