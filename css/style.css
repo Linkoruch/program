@@ -1,0 +1,113 @@
+h1{
+text-align: center;
+color: white;
+}
+
+body{
+background-image: url('images/background.png') ;
+background-attachment: scroll;
+color: #f6ff00;
+}
+
+table {
+	border-spacing: 45px 5px;
+	/*Цей пункт добавляє границі по периметру border-collapse: separate;*/
+	/*Цей пункт добавляє полоску в 1 піксель border: 1px solid red;*/
+    margin: auto;
+}
+
+td {
+	text-align: center;
+    font-size: 110%;
+    word-spacing: normal;
+}
+
+a{
+color: red;
+text-align: center;
+}
+
+thead{
+font-size: 115%;
+}
+
+h2{
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+header{
+text-align: center;
+/*background-color: bisque;*/
+}
+
+#prapor {
+    width: 200px;
+    background-image: url('/images/prapor2.png');
+    background-size: cover;
+    animation: wave 4s infinite ease-in-out alternate;
+}
+
+@keyframes wave {
+    0% {
+        transform: skewX(0deg) translateY(0);
+    }
+    25% {
+        transform: skewX(-15deg) translateY(-1%);
+    }
+    50% {
+        transform: skewX(15deg) translateY(-1%);
+    }
+    75% {
+        transform: skewX(-15deg) translateY(-1%);
+    }
+    100% {
+        transform: skewX(0deg) translateY(0);
+    }
+}
+
+footer{
+text-align: center;
+}
+
+.dropdowns {
+    display: flex; /* Вирівнює випадаючі списки в ряд */
+	justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px; /* Відстань між списками */
+}
+
+.dropdown-text {
+    cursor: pointer;
+    color: yellow;
+    text-decoration: underline;
+	font-size: large;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
