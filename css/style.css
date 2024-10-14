@@ -4,9 +4,9 @@ color: white;
 }
 
 body{
-background-image: url('/program/images/background.png') ; 
+background-image: url(/images/fon2.jpg) ;
 background-attachment: scroll;
-color: #f6ff00;
+color: #fff700 ;
 }
 
 table {
@@ -23,7 +23,7 @@ td {
 }
 
 a{
-color: red;
+color: rgb(141, 240, 220);
 text-align: center;
 }
 
@@ -32,8 +32,9 @@ font-size: 115%;
 }
 
 h2{
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	text-align: center;
+    color: #fff700;
 }
 
 header{
@@ -72,7 +73,7 @@ text-align: center;
 
 .dropdowns {
     display: flex; /* Вирівнює випадаючі списки в ряд */
-	justify-content: center;
+    justify-content: center;
 }
 
 .dropdown {
@@ -83,18 +84,20 @@ text-align: center;
 
 .dropdown-text {
     cursor: pointer;
-    color: yellow;
+    color: #e8bbfb;
     text-decoration: underline;
-	font-size: large;
+    font-size: large;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #acacac;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 8px; /* Заокруглення країв списку */
+    overflow: hidden; /* Сховати кути, якщо елементи виходять за межі */
 }
 
 .dropdown-content a {
@@ -102,6 +105,11 @@ text-align: center;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-bottom: 1px solid #ccc; /* Лінія між пунктами */
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none; /* Сховати лінію для останнього елемента */
 }
 
 .dropdown-content a:hover {
@@ -110,4 +118,8 @@ text-align: center;
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+th{
+color: #ffe600;
 }
